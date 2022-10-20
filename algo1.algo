@@ -1,0 +1,21 @@
+ALGORITHM algorithm_name
+VAR
+    i,n,S:INTEGER
+    tab: ARRAY_OF INTEGER[n];
+BEGIN
+i:=0
+//S:=0
+max:=tab[0]
+write("Donner le length du tableau,n")
+read(n)
+    FOR i FROM 0 TO n-1 STEP step  DO
+        read(tab[i])
+        //s:= s + tab[i]
+        IF (max<tab[i+1]) THEN
+        max:=tab[i+1]
+        i:=i+1
+        END_IF
+    END_FOR
+    write("le plus grand nombre est",max)
+    write(S)
+END
